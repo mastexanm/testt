@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+     <meta charset="utf-8">
+    <meta name="description" content="Free Web tutourials ">
+  <meta name="keywords" content=" Html,Css,js">
+    <meta name="author" content="Sana Dara,Kani Hawre,Sozyar Osman,Mastan Fayaq">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='../css/three.css'>
+     <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+    <link rel='stylesheet' type='text/css' href='../css/second.css'>
+    
+    <title>Fitness</title>
+       <link rel="shortcut icon" type="image/jpg" href="../photo/logo.png"/>
+    
+</head>
+
+
+
+<body >
+        
+       
+    
+    <header class="header">
+        <!-- Left box for logo -->
+       <div><image href="../photo/photo_2022-12-15_21-53-50.jpg" src="../photo/photo_2022-12-15_21-53-50.jpg" width ="1350" height="400"></image>
+  </div>
+       <div class="left">
+            <a  href="index.html"> <img src="../photo/logo.png"  alt=""></a>
+            <div>Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="exercise.html">exercise</a></li>
+                <li><a href="trophic.html">trophic</a></li>
+                <li><a href="calculator.html">Fitness Calculator</a></li>
+            </ul>
+        </div>
+
+        
+      <div class="right">
+            
+              <button class="btn" type="button" >fitness app</button>                           
+                        <button class="btn"  >       
+  <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script></button>
+            <br> <br>
+        </div>   <div class="right1">
+    <button class="btn"onclick="darkMode()"><img src="../photo/7.png" width="50px" height="50px"></button>
+            <button class="btn"onclick="lightMode()"><img src="../photo/download2.jpg" width="50px" height="50px"></button> 
+            
+        </div>
+       
+
+  
+        
+        </header>
+    
+ <script>
+   var pressedButton = document.getElementsByTagName("button")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("there`s problem we`re really sorry we`re working to fix it as soon as")
+   })
+</script> 
+    
+    
+ <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+    
+  
+  
+   
+    
+    
+    <br>
+       <br>
+       
+        
+     <center>
+         
+   <b>Search the table for food calorie: 
+          <input id="gfg" type="text" 
+                 placeholder="Search here">
+        </b>
+         <br>
+         <br>
+  
+    <table>
+            
+            <tr>
+                <th >no.</th>
+            <th> Name</th>
+                <th>Serving</th>
+                <th>Calories</th>
+            
+            </tr>
+        
+        <tbody id="trophic">
+            
+            
+          <tr>
+                <th >fruits</th>
+            
+            
+            </tr>
+          
+            
+          
+              <tr >
+          
+                <th>1</th>
+            <th>apple</th>
+                <th>1 apple(182 g)</th>
+                <th>52 cal</th>
+            
+            
+            </tr>
+        
+             
+          
+              <tr >
+          
+                <th>2</th>
+            <th>avocado</th>
+                <th>1 avocado (200 g)</th>
+                <th>92 cal</th>
+            
+            
+            </tr>
+        
+        
+              <tr >
+          
+                <th>3</th>
+            <th>banana</th>
+                <th>1 banana (125 g)</th>
+                <th>111 cal</th>
+            
+            
+            </tr>
+        
+        
+              <tr >
+          
+                <th>4</th>
+            <th>blackberries</th>
+                <th>1 cup(144 g)</th>
+                <th>62 cal</th>
+            
+            
+            </tr>
+        
+          <tr >
+          
+                <th>4</th>
+            <th>blue berries</th>
+                <th>1 cup(144 g)</th>
+                <th>62 cal</th>
+            
+            
+            </tr>
+        
+        
+        
+         <tr >
+                <th>5</th>
+            <th>figs</th>
+                <th>1 fig(50 g)</th>
+                <th>37 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>6</th>
+            <th>fruit salad</th>
+                <th>1 cup(249 g)</th>
+                <th>125 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>7</th>
+            <th>graps</th>
+                <th>1 cup(151 g)</th>
+                <th>104 cal</th>
+        
+            </tr>
+        
+             <tr >
+                <th>8</th>
+            <th>kiwi</th>
+                <th>1 kiwi(183 g)</th>
+                <th>112 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>9</th>
+            <th>limon</th>
+                <th>1 limon(58 g)</th>
+                <th>17 cal</th>
+        
+            </tr>
+        
+        
+        
+         <tr >
+                <th>10</th>
+            <th>mango</th>
+                <th>1 mango(336 g)</th>
+                <th>202 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>11</th>
+            <th>olives</th>
+                <th>1 olive(2.7 g)</th>
+                <th>2 cal</th>
+        
+            </tr>
+        
+        <tr >
+                <th>12</th>
+            <th>peach</th>
+                <th>1 peach(150 g)</th>
+                <th>150 cal</th>
+        
+            </tr>
+        <tr >
+                <th>13</th>
+            <th>pear</th>
+                <th>1 pear(178 g)</th>
+                <th>101 cal</th>
+        
+            </tr>
+        
+        <tr >
+                <th>14</th>
+            <th>pin apple</th>
+                <th>1 pin apple(905 g)</th>
+                <th>453 cal</th>
+        
+            </tr>
+        
+          
+        <tr >
+                <th>15</th>
+            <th>water melon</th>
+                <th>1 wedge(286 g)</th>
+                <th>86 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>vegetables</th>
+            
+            </tr>
+        
+         <tr >
+                <th>16</th>
+            <th>broccoli</th>
+                <th>1 bunch(608 g)</th>
+                <th>207 cal</th>
+        
+            </tr>
+        
+        <tr >
+                <th>17</th>
+            <th>carrot</th>
+                <th>1 carrot(61 g)</th>
+                <th>25 cal</th>
+        
+            </tr>
+        
+        
+        <tr >
+                <th>18</th>
+            <th>corn</th>
+                <th>1 cup(154 g)</th>
+                <th>562 cal</th>
+        
+            </tr>
+        
+         <tr >
+                <th>19</th>
+            <th>cucumber</th>
+                <th>1 cucumber(410 g)</th>
+                <th>66 cal</th>
+        
+            </tr>
+        
+        <tr >
+                <th>20</th>
+            <th>garlic</th>
+                <th>1 clove(3 g)</th>
+                <th>4 cal</th>
+        
+            </tr>
+        
+         
+        <tr >
+                <th>21</th>
+            <th>green beans</th>
+                <th>1 cup(110 g)</th>
+                <th>34 cal</th>
+        
+            </tr>
+    
+        <tr >
+                <th>22</th>
+            <th>green onion</th>
+                <th>1 green onion(15 g)</th>
+                <th>5 cal</th>
+        
+            </tr>
+        
+        
+        <tr >
+                <th>23</th>
+            <th>onion</th>
+                <th>1 onion(85 g)</th>
+                <th>34 cal</th>
+        
+            </tr>
+        
+          <tr >
+                <th>24</th>
+            <th>mushrooms</th>
+                <th>1 mushroom(5.4 g)</th>
+                <th>1 cal</th>
+        
+            </tr>
+        
+          <tr >
+                <th>25</th>
+            <th>potato</th>
+                <th>1 potato(213 g)</th>
+                <th>164 cal</th>
+        
+            </tr>
+        
+          <tr >
+                <th>26</th>
+            <th>pepper</th>
+                <th>1 pepper(75 g)</th>
+                <th>20 cal</th>
+        
+            </tr>
+        
+        
+          <tr >
+                <th>fast food</th>
+            
+        
+            </tr>
+        
+          <tr >
+                <th>27</th>
+            <th>zinger</th>
+                <th>1 sandwich(202 g)</th>
+                <th>517 cal</th>
+        
+        </tr>
+              
+               <tr >
+                <th>28</th>
+            <th>tuna</th>
+                <th>1 oz.(28.35 g)</th>
+                <th>24 cal</th>
+        
+        </tr>   
+        
+               <tr >
+                <th>29</th>
+            <th>smoked salmon</th>
+                <th>1 oz.(28.35 g)</th>
+                <th>44 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>30</th>
+            <th>onion rings</th>
+                <th>1 ring(6.5 g)</th>
+                <th>25 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>31</th>
+            <th>lasanga</th>
+                <th>1 piece(130 g)</th>
+                <th>172 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>32</th>
+            <th>hot dog</th>
+                <th>1 hot dog(116 g)</th>
+                <th>312 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>33</th>
+            <th>ham burger</th>
+                <th>1 sandwich(110 g)</th>
+                <th>279 cal</th>
+        
+        </tr> 
+          <tr >
+                <th>34</th>
+            <th>grilled chicken salad</th>
+                <th>1 salad(305 g)</th>
+                <th>268 cal</th>
+        
+        </tr> 
+          <tr >
+                <th>35</th>
+            <th>french fries</th>
+                <th>1 serving(71 g)</th>
+                <th>222 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>36</th>
+            <th>falafel</th>
+                <th>1 patty(17 g)</th>
+                <th>57 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>37</th>
+            <th>chicken sandwich</th>
+                <th>1 sandwich(170 g)</th>
+                <th>410 cal</th>
+        
+        </tr> 
+        
+           <tr >
+                <th>38</th>
+            <th>chicken nuggets</th>
+                <th>1 piece(20 g)</th>
+                <th>59 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>39</th>
+            <th>cheese burger</th>
+                <th>1 burger(156 g)</th>
+                <th>410 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>40</th>
+            <th>pizza</th>
+                <th>1 slice(156 g)</th>
+                <th>399 cal</th>
+        
+        </tr> 
+        
+        
+           <tr >
+                <th>milk and dairy products</th>
+           
+        
+        </tr> 
+        
+           <tr >
+                <th>41</th>
+            <th>milk</th>
+                <th>1 cup(244 g)</th>
+                <th>149 cal</th>
+        
+        </tr> 
+        
+           <tr >
+                <th>42</th>
+            <th>yogurt</th>
+                <th>1 container(227 g)</th>
+                <th>138 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>43</th>
+            <th>cream</th>
+                <th>1 tbsp(15 g)</th>
+                <th>36 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>meat</th>
+           
+        
+        </tr> 
+        
+         <tr >
+                <th>44</th>
+            <th>chicken</th>
+                <th>1/2 chicken(334 g)</th>
+                <th>731 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>44</th>
+            <th>duck</th>
+                <th>1/2 duck(634g)</th>
+                <th>2137 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>45</th>
+            <th>sausage</th>
+                <th>1 sausage(16g)</th>
+                <th>37 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>46</th>
+            <th>beef</th>
+                <th>6 oz.(168g)</th>
+                <th>287 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>candy and sweets </th>
+           
+        </tr> 
+        
+        
+         <tr >
+                <th>47</th>
+            <th>ice cream</th>
+                <th>1 scoop(103 g)</th>
+                <th>164 cal</th>
+        
+        </tr> 
+        
+        <tr >
+                <th>48</th>
+            <th>twix</th>
+                <th>1 bar(25 g)</th>
+                <th>124 cal</th>
+        
+        </tr> 
+        
+          
+        <tr >
+                <th>49</th>
+            <th>popcorn</th>
+                <th>1 cup(11 g)</th>
+                <th>36 cal</th>
+        
+        </tr> 
+        
+          
+        <tr >
+                <th>50</th>
+            <th>lollipop</th>
+                <th>1 lollipop(12 g)</th>
+                <th>47 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>51</th>
+            <th>cookies</th>
+                <th>1 cookie(16 g)</th>
+                <th>78 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>52</th>
+            <th>chocolate</th>
+                <th>1 piece(7 g)</th>
+                <th>37 cal</th>
+        
+        </tr> 
+        
+         <tr >
+                <th>53</th>
+            <th>candy apple</th>
+                <th>1 apple(141 g)</th>
+                <th>214 cal</th>
+        
+        </tr> 
+        
+          <tr >
+                <th>54</th>
+            <th>candy apple</th>
+                <th>1 apple(141 g)</th>
+                <th>214 cal</th>
+        
+        </tr> 
+        
+            <tr >
+                <th>55</th>
+            <th>sponge cake</th>
+                <th>1 piece(38 g)</th>
+                <th>110 cal</th>
+        
+        </tr> 
+            <tr >
+                <th>56</th>
+            <th>pancake</th>
+                <th>1 pancake(38 g)</th>
+                <th>86 cal</th>
+        
+        </tr> 
+        
+         
+            <tr >
+                <th>57</th>
+            <th>donut</th>
+                <th>1 donut(60 g)</th>
+                <th>242 cal</th>
+        
+        </tr> 
+     
+            <tr >
+                <th>58</th>
+            <th>cupcake</th>
+                <th>1 cupcake(43 g)</th>
+                <th>131 cal</th>
+        
+        </tr> 
+        
+       
+            <tr >
+                <th>cereal product</th>
+          
+        </tr>  
+        
+             <tr >
+                <th>59</th>
+            <th>brown rice</th>
+                <th>1 cup(195 g)</th>
+                <th>757 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>60</th>
+            <th>barley</th>
+                <th>1 cup(157 g)</th>
+                <th>556 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>61</th>
+            <th>cornstarch</th>
+                <th>1 cup(128 g)</th>
+                <th>448 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>62</th>
+            <th>noodles</th>
+                <th>1 cup(38 g)</th>
+                <th>146 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>63</th>
+            <th>spaghetti</th>
+                <th>2 oz.(56 g)</th>
+                <th>207 cal</th>
+        
+        </tr> 
+        
+             <tr >
+                <th>lequmes</th>
+            
+        
+        </tr> 
+             <tr >
+                <th>64</th>
+            <th>chickpeas</th>
+                <th>1 cup(12.5 g)</th>
+                <th>44 cal</th>
+        
+        </tr> 
+        
+                <tr >
+                <th>65</th>
+            <th>green beans</th>
+                <th>1 cup(100 g)</th>
+                <th>31 cal</th>
+        
+        </tr> 
+        
+                <tr >
+                <th>65</th>
+            <th>chick lentil</th>
+                <th>1 cup,dry(60 g)</th>
+                <th>154 cal</th>
+        
+        </tr> 
+                <tr >
+                <th>66</th>
+            <th>red beans</th>
+                <th>1 can(266 g)</th>
+                <th>330 cal</th>
+        
+        </tr> 
+                <tr >
+                <th>67</th>
+            <th>red lentil</th>
+                <th>1 cup(197 g)</th>
+                <th>648 cal</th>
+        
+        </tr> 
+        
+                <tr >
+                <th>68</th>
+            <th>chickpeas</th>
+                <th>1 cup(12.5 g)</th>
+                <th>44 cal</th>
+        
+        </tr> 
+        
+                <tr >
+                <th>64</th>
+            <th>chickpeas</th>
+                <th>1 cup(12.5 g)</th>
+                <th>44 cal</th>
+        
+        </tr> 
+          </tbody>
+      
+        
+        
+        
+        </table>
+    
+           <script>
+            $(document).ready(function() {
+                $("#gfg").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#trophic tr").filter(function() {
+                        $(this).toggle($(this).text()
+                        .toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
+  </center>
+      
+    
+   
+      <div class="container10">
+    <div class="contact">
+              <button class="btn">contact us</button>
+            
+          </div>  
+        </div>
+    
+   
+</body>
+
+</html>

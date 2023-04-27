@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web tutourials ">
+    <meta name="keywords" content=" Html,Css,js">
+    <meta name="author" content="Sana Dara,Kani Hawre,Sozyar Osman,Mastan Fayaq">
+    <link rel='stylesheet' type='text/css' href='../css/three.css'>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fitness</title>
+    
+    <link rel="shortcut icon" type="image/jpg" href="../photo/logo.png"/>
+</head>
+
+
+
+<body >
+        
+    
+    <header class="header">  
+        <!-- Left box for logo -->
+   
+        <div class="left">
+               <a  href="index.html"> <img src="../photo/logo.png"  alt=""></a>
+            <div>Fitness</div>
+          
+        </div>
+        <!-- Mid box for navbar -->
+        <nav class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="exercise.html">exercise</a></li>
+                <li><a href="trophic.html">trophic</a></li>
+                <li><a href="calculator.html">Fitness Calculator</a></li>
+                </ul>
+        </nav>
+       
+    
+    <div class="right">
+            
+              <button class="btn" type="button" >fitness app/button>                           
+                        <button class="btn"  >       
+  <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script></button>
+            <br> <br>
+        </div>   <div class="right1">
+    <button class="btn"onclick="darkMode()"><img src="../photo/7.png" width="50px" height="50px"></button>
+            <button class="btn"onclick="lightMode()"><img src="../photo/download2.jpg" width="50px" height="50px"></button> 
+            
+        </div>
+         
+
+  
+        </header>
+    
+
+
+     <script>
+   var pressedButton = document.getElementsByTagName("button")[0];
+   pressedButton.addEventListener("click", function (event) {
+    alert("there`s problem we`re really sorry we`re working to fix it as soon as")
+   })
+</script> 
+    
+    
+ <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+
+
+
+<div class="calcalc_box">
+<img src="../photo/calcu (1).jpg" width="900" height="400" />
+<h1> Calculator</h1>
+<h2>Nutrition Calculator</h2>
+    <h5>(to change cm to inche) cm divide the length value by 2.54
+</h5>
+    
+        <h5> (to change kg to pound) kg for an approximate result, multiply the mass value by 2.205
+
+</h5>
+<form class="the_calculator">
+<div class="calculator_section">
+<label for="gender">Gender</label>
+Male<input type="radio" name="gender" value="Male" id="gender">
+Female<input type="radio" name="gender" value="Female" id="gender">
+</div>
+<label for="age">Age : </label><input type="number" name="age" class="calculator_input" id="age"><br>
+<label for="height">Height (in inches) : </label><input type="number" name="height" class="calculator_input" id="height"><br>
+<label for="weight">Weight (in pounds) : </label><input type="number" name="weight" class="calculator_input" id="weight"><br>
+<label for="goalweight">Goal Weight : </label><input type="number" name="weight" class="calculator_input" id="goalweight"><br>
+<label for="activity">Activity Level</label>
+              Little to no exercise <input type="radio" name="activity" value="none" id="activity">
+
+  Light Exercise (walks, runs) <input type="radio" name="activity" value="light" id="activity">
+Moderate Exercise (sports) <input type="radio" name="activity" value="moderate" id="activity">
+ Heavy Exercise (daily consistent routine) <input type="radio" name="activity" value="heavy" id="activity">
+Extra Heavy Exercise (twice daily consistent routine) <input type="radio" name="activity" value="xheavy" id="activity">
+<br><br>
+<button class="calcalc_button" onClick="getCalc()" style="margin-left:13vw;" >Calculate
+        </button>
+        <span class= "requireddailycals"></span>
+</form>
+<a href="index.html"><span class="calcalc_back"><br><br><br>click here to go back</span></a>
+</div>
+
+    
+ 
+   <script>
+     
+   document.querySelector('.calcalc_button').addEventListener('click', function(e) {
+        e.preventDefault();
+      var weight = document.getElementById('weight').value;
+        var height = document.getElementById("height").value;
+        var age = document.getElementById("age").value;
+        var goalweight = document.getElementById("goalweight").value;
+        var gender = document.getElementById("gender").value;
+        var activity = document.getElementById("activity").value;
+            var BMR = " ";
+            var BMRGoal = " ";
+            var dailyCalories = " ";
+            var goalCalories = " ";
+            if (gender == "male") {
+            BMR = 66.47+(6.24*weight)+(12.7*height)-(6.755*age);
+            BMRGoal = 66.47+(6.24*goalweight)+(12.7*height)-(6.755*age);
+            } else {
+            BMR = 655.1+(4.35*weight)+(4.7*height)-(4.7*age);
+            BMRGoal = 66.47+(6.24*goalweight)+(12.7*height)-(6.755*age);
+            }
+            if (activity == "none") {
+             dailyCalories = BMR*1.2;
+             goalCalories = BMRGoal*1.2;
+            } else if (activity == 'light') {
+             dailyCalories = BMR*1.375;
+             goalCalories = BMRGoal*1.2;
+            } else if (activity == 'moderate') {
+             dailyCalories = BMR*1.55;
+             goalCalories = BMRGoal*1.2;
+            } else if (activity == 'heavy') {
+             dailyCalories = BMR*1.725;
+             goalCalories = BMRGoal*1.2;
+            } else if (activity == 'xheavy') {
+             dailyCalories = BMR*1.9;
+             goalCalories = BMRGoal*1.2;
+            }
+            document.querySelector('.requireddailycals').innerHTML = '<br>Your current daily calorie intake is ' + dailyCalories + '. In order to reach your desired weight goal, you will need to change your calorie intake to ' + goalCalories + '.';
+            //document.getElementById("requireddailycals").value = dailyCalories(goalCalories);
+         })
+
+        //var weight = document.getElementById("weight").value;
+        function getCalc() {
+            preventDefault();
+            console.log("asd");
+ 
+    }</script>
+
+   
+    
+       
+    </body>
+     
+    
+
+
+</html>
