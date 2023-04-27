@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select onchange="sel()" name="se" id="sel">
+
+    <option value="chlura">chlura</option>
+    <option value="mota">mota</option>
+    <option value="icecream">icecream</option>
+    <option value="selectb">selectb</option>
+</select>
+
+  <p id = "text">hellow word </p>
+    
+
+
+  <button   onclick="show()"   >show me</button>
+  <button   onclick="hide()"   >hide me</button>
+  <button   onclick="red()"   >red text</button>
+  <p id = "demo"></p>
+  <div id="div1"style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+
+Mouse Over Me</div>
+<script>
+
+function sel(){
+var x= document.getElementById("sel").value;
+document.getElementById("demo").innerHTML=x;
+
+}
+let mydiv = document.getElementById("div1");
+
+mydiv.addEventListener("mouseover",function(){
+    mydiv.innerHTML="thank you";
+});
+
+
+mydiv.addEventListener("mouseout", function(){
+mydiv.innerHTML="Mouse Over Me";
+});
+
+
+text=document.getElementById("text");
+
+
+function hide(){
+
+
+
+text.style.visibility="hidden";
+
+}
+
+function show(){
+
+
+
+text.style.visibility="visible";
+
+}
+
+function red(){
+if(text.style.visibility=="hidden"){
+    text.style.visibility="visible";
+
+
+
+}
+text.style.color="red";
+
+}
+
+</script>
+
+</body>
+</html>
